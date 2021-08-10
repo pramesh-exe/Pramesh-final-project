@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Meow Restaurant</title>
+	<link rel="stylesheet" href="reservation.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Georama&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script type="text/javascript" src="reservation.js"></script>
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="index.html"><img src="images/logo.png"></a>
+			<div class="navbar">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li class="active"><a href="reservation.html">RESERVATION</a></li>
+					<li><a href="menu.html">MENU</a></li>
+					<li><a href="gallery.html">GALLERY</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+		</nav>
+		<section class = "banner">
+            <h2>BOOK YOUR TABLE NOW</h2>
+            <div class = "card-container">
+                <div class = "card-img">
+                 
+                </div>
+
+                <div class = "card-content">
+                    <h3>Reservation</h3>
+                    <form name="reservation" onsubmit="validateForm()">
+                        <div class = "form-row">
+                            <select name = "days" required>
+                                <option disabled selected value>Select Day</option>
+                                <option value = "sunday">Sunday</option>
+                                <option value = "monday">Monday</option>
+                                <option value = "tuesday">Tuesday</option>
+                                <option value = "wednesday">Wednesday</option>
+                                <option value = "thursday">Thursday</option>
+                                <option value = "friday">Friday</option>
+                                <option value = "saturday">Saturday</option>
+                            </select>
+
+                            <select name = "hours" required>
+                                <option disabled selected value>Select Hour</option>
+                                <option value = "10">10: 00 AM</option>
+                                <option value = "10">12: 00 PM</option>
+                                <option value = "10">02: 00 PM</option>
+                                <option value = "10">04: 00 PM</option>
+                                <option value = "10">06: 00 PM</option>
+                                <option value = "10">08: 00 PM</option>
+                                <option value = "10">10: 00 PM</option>
+                            </select>
+                        </div>
+
+                        <div class = "form-row">
+                            <input type = "text" placeholder="Full Name" name="name" required>
+                            <input type = "text" placeholder="Phone Number" name="phone" required>
+                        </div>
+
+                        <div class = "form-row">
+                            <input type = "number" placeholder="How Many Persons?" name="person" min = "1" required>
+                            <input type = "submit" value = "BOOK TABLE">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>		
+	<footer>© Meow Restaurant, All Rights Reserved</footer>
+	</header>
+	
+	
+</body>
+</html>

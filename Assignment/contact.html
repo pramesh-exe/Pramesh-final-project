@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Meow Restaurant</title>
+	<link rel="stylesheet" href="contact.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Georama&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<script type="text/javascript" src="contact.js"></script>
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="index.html"><img src="images/logo.png"></a>
+			<div class="navbar">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="reservation.html">RESERVATION</a></li>
+					<li><a href="menu.html">MENU</a></li>
+					<li><a href="gallery.html">GALLERY</a></li>
+					<li class="active"><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</div>	
+		</nav>
+		<div class="container">
+  			<h2>Contact Us!</h2>
+  			
+		</div>
+		
+	</header>
+	<div class="map">
+			<h2>Find Us!</h2>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1757.7027194180691!2d83.94465415811763!3d28.22537129564502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399594c4df06ad7b%3A0x392b4a7508336907!2sPanchase%20Marga%2018%2C%20Pokhara%2033700!5e0!3m2!1sen!2snp!4v1628587168434!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		</div>
+	<section class="info">
+		<div class="row">
+			<div class="col">
+			<div>
+				<i class="fas fa-home"></i>
+				<span>	
+					<h5>ABC road</h5>
+					<p>Pame, Pokhara, Nepal</p>
+				</span>
+			</div>
+			<div>			
+				<i class="fas fa-phone"></i>
+				<span>	
+					<h5>+977 987654321, +977 01-4567890 </h5>
+					<p>10AM to 11PM</p>		
+				</span>
+			</div>
+			<div>	
+				<a href="https://www.gmail.com/" target="_blank">
+				<i class="fas fa-envelope"></i>
+			</a>
+				<span>	
+					<a href = "mailto: info@meowrestaurant.com"><h5>info@meowrestaurant.com</h5></a>
+					 <p>Email us your query!</p>
+				</span>
+			</div>
+		</div>
+		<div class="col">
+			<form name="contactform" onsubmit="validateForm()">
+				<input type="text" placeholder="Enter your name" name="name" required>
+				<input type="email" placeholder="Enter email address" name="email" required>
+				<input type="text" placeholder="Enter your subject" name="subject" required>
+				<textarea rows="8" placeholder="Message" name="message" required></textarea>
+				<button type="submit" class="button">Send Message</button>
+			</form>	
+		</div>	
+	</div>
+	</section>
+
+	<footer>© Meow Restaurant, All Rights Reserved</footer>
+</body>
+</html>

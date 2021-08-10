@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Meow Restaurant</title>
+	<link rel="stylesheet" href="index.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Georama&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<script type="text/javascript">
+	var image1=new Image();
+	image1.src="image1.jpg" ;
+	var image2=new Image() ;
+	image2.src="image2.jpg" ;
+	var image3=new Image() ;
+	image3.src="image3.jpg" ;
+	</script>
+</head>
+<body>
+	
+	
+	<header>
+		<nav>
+			<a href="index.html"><img src="images/logo.png"></a>
+			<div class="navbar">
+				<ul>
+					<li class="active"><a href="index.html">HOME</a></li>
+					<li><a href="reservation.html">RESERVATION</a></li>
+					<li><a href="menu.html">MENU</a></li>
+					<li><a href="gallery.html">GALLERY</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</div>	
+		</nav>
+		<div class="main">
+			<h1>World's Tastiest Food</h1>
+			<p>
+				Get yourself ready for a food experience of a lifetime, an experience like no other. 
+			</p>
+			<a href="reservation.html" class="button">Click here to make your reservation today!</a><br>
+			<img src="image1.jpg" name="slide" class="asdf" >
+			<script>
+				var step=1
+				function slideit(){
+				if (!document.images)
+					return;
+				document.images.slide.src=eval("image"+step+".src");
+				if (step<3)
+					step++;
+				else
+					step=1;
+				setTimeout("slideit()", 2500);
+				}
+				slideit()
+			</script>
+		</div>
+
+	</header>
+	<div class="row">
+    	<div class="col">
+        	<a style="text-decoration:none" href="menu.html">
+        	<i class="fab fa-elementor"></i><br>
+        	<h3>Menu</h3>
+        	<h5>Click for Menu!</h5>
+        	</a>
+    	</div>
+        <div class="col">
+        	<a style="text-decoration:none" href="gallery.html">
+        	<i class="fas fa-images"></i><br>
+        	<h3>Gallery</h3>
+        	<h5>Click for some awesome food snaps!</h5>
+        	</a>
+    	</div>
+    	<div class="col">
+        	<a style="text-decoration:none" href="contact.html">
+        	<i class="fas fa-phone-alt"></i>
+        	<h3>Contact</h3>
+        	<h5>Click for contact info!</h5>
+        	</a>
+    	</div>
+	</div>
+	<footer>© Meow Restaurant, All Rights Reserved</footer>
+</body>
+</html>
